@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c736252a71d5799468c293dd39275fb0, type: 3}
-  m_Name: FileData
+  m_Script: {fileID: 11500000, guid: ce00bc8b24923ae419cc350f2505cb72, type: 3}
+  m_Name: Salami
   m_EditorClassIdentifier: 
-  files:
-  - fileEnding: .cs
-    targetLocation: /Scripts
-  - fileEnding: .mat
-    targetLocation: /Materials
-  enabled: 1
+  types: 0000000002000000
+  effects: 01000000
