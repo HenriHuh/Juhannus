@@ -8,14 +8,15 @@ public class Spells : MonoBehaviour
 
     public static Spells instance;
 
-    public GameObject makkara, pupu;
+    public GameObject makkara, pupu, isoMakkara;
 
     public enum Effects
     {
         saatana,
         salamia,
         pupu,
-        makkaraSade
+        makkaraSade,
+        isoMakkara
     }
 
     private void Start()
@@ -36,6 +37,13 @@ public class Spells : MonoBehaviour
                 break;
             case Effects.makkaraSade:
                 StartCoroutine(SpawnRandom(makkara, power));
+                break;
+            case Effects.isoMakkara:
+                GameObject g = Instantiate(isoMakkara, Vector3.up * 20, Quaternion.identity);
+                foreach (Rigidbody rb in g.GetComponentsInChildren<Rigidbody>())
+                {
+                    rb.AddTorque(new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)) * 50);
+                }
                 break;
             default:
                 break;
