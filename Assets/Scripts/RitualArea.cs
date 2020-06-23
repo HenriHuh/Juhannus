@@ -32,6 +32,7 @@ public class RitualArea : MonoBehaviour
 
     void CheckCombinations() //Dont look at this code :)
     {
+        List<Collectible> temp = collected;
         List<Collectible> toRemove = new List<Collectible>();
         foreach (Combination com in combinations)
         {
@@ -40,13 +41,15 @@ public class RitualArea : MonoBehaviour
             foreach (Collectible.Type ct in com.types)
             {
                 bool fail = true;
-                foreach (Collectible col in collected)
+                foreach (Collectible col in temp)
                 {
-                    if (col.type == ct)
+                    if (col.type == ct && !col.used)
                     {
                         toRemove.Add(col);
                         objs.Add(col.gameObject);
                         fail = false;
+                        col.used = true;
+                        break;
                     }
                 }
                 if (fail)
@@ -62,12 +65,12 @@ public class RitualArea : MonoBehaviour
                     collected.Remove(c);
                 }
 
-                Spells.instance.RitualEffect(objs, com.effects);
+                Spells.instance.RitualEffect(objs, com.effects, com.power);
+            }
 
-                //foreach (Spells.Effects e in com.effects)
-                //{
-                //    Spells.instance.Play(e);
-                //}
+            foreach (Collectible c in collected)
+            {
+                c.used = false;
             }
         }
     }

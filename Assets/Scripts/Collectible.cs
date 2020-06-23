@@ -11,5 +11,5 @@ public class Collectible : MonoBehaviour
         tolkki,
         kukka
     }
-
+    [HideInInspector] public bool used = false;
 }

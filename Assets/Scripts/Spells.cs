@@ -8,11 +8,14 @@ public class Spells : MonoBehaviour
 
     public static Spells instance;
 
+    public GameObject makkara, pupu;
+
     public enum Effects
     {
-        summonthesaatana,
+        saatana,
         salamia,
-        pupu
+        pupu,
+        makkaraSade
     }
 
     private void Start()
@@ -20,28 +23,31 @@ public class Spells : MonoBehaviour
         instance = this;
     }
 
-    public void Play(Effects effect)
+    public void Play(Effects effect, float power)
     {
         switch (effect)
         {
-            case Effects.summonthesaatana:
+            case Effects.saatana:
                 break;
             case Effects.salamia:
                 salama.Play();
                 break;
             case Effects.pupu:
                 break;
+            case Effects.makkaraSade:
+                StartCoroutine(SpawnRandom(makkara, power));
+                break;
             default:
                 break;
         }
     }
 
-    public void RitualEffect(List<GameObject> objs, List<Effects> effects)
+    public void RitualEffect(List<GameObject> objs, List<Effects> effects, float power)
     {
-        StartCoroutine(Ritual(objs, effects));
+        StartCoroutine(Ritual(objs, effects, power));
     }
 
-    IEnumerator Ritual(List<GameObject> objs, List<Effects> effects)
+    IEnumerator Ritual(List<GameObject> objs, List<Effects> effects, float power)
     {
         float t = 0;
         while (t < 2f)
@@ -65,8 +71,31 @@ public class Spells : MonoBehaviour
 
         foreach (Effects e in effects)
         {
-            Play(e);
+            Play(e, power);
         }
+        yield return null;
+    }
+
+    IEnumerator SpawnRandom(GameObject obj, float power)
+    {
+        float t = 0;
+        float next = Random.Range(0.5f, 1f) / power;
+
+        while (t < 2.5f)
+        {
+            t += Time.deltaTime;
+            if (t > next)
+            {
+                GameObject g = Instantiate(obj, new Vector3(Random.Range(-10, 10), 20, Random.Range(-10, 10)), Quaternion.identity);
+                if (g.GetComponent<Rigidbody>())
+                {
+                    g.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)) * 50);
+                }
+                next += Random.Range(0.5f, 1f) / power;
+            }
+            yield return null;
+        }
+
         yield return null;
     }
 

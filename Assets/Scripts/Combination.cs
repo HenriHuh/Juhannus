@@ -7,4 +7,5 @@ public class Combination : ScriptableObject
 {
     public List<Collectible.Type> types;
     public List<Spells.Effects> effects;
+    [Tooltip("Increases amount of spawnable objects")]public float power = 1;
 }
