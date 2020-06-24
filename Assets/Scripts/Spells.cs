@@ -10,6 +10,8 @@ public class Spells : MonoBehaviour
 
     public GameObject makkara, pupu, isoMakkara;
 
+    public AudioClip magic;
+
     public enum Effects
     {
         saatana,
@@ -52,6 +54,7 @@ public class Spells : MonoBehaviour
 
     public void RitualEffect(List<GameObject> objs, List<Effects> effects, float power)
     {
+        AudioManager.instance.Play(magic, 0.7f);
         StartCoroutine(Ritual(objs, effects, power));
     }
 

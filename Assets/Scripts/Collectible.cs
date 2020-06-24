@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     public Type type;
+    public List<AudioClip> collisionSound;
     public enum Type
     {
         makkara,
@@ -12,4 +13,15 @@ public class Collectible : MonoBehaviour
         kukka
     }
     [HideInInspector] public bool used = false;
+    
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (collisionSound.Count > 0)
+        {
+            AudioManager.instance.Play(collisionSound[Random.Range(0, collisionSound.Count)], Random.Range(0.1f, 0.2f));
+
+        }
+    }
+
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 41506008640008428}
   - component: {fileID: 41506008640008419}
   - component: {fileID: 41506008640008418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4995737706462279546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 4739506373394482335}
   - component: {fileID: 4739506373394482334}
   - component: {fileID: 4739506373394482333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8789450184549825780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "J\xE4ttiMakkara"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 6181128392099019735}
   - component: {fileID: 6181128392099019734}
   - component: {fileID: 6181128392099019733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 6471302738169337043}
   - component: {fileID: 6225461821307860041}
   - component: {fileID: 6225461821307860040}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7351608667881843127}
   - component: {fileID: 5519857750991416860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
