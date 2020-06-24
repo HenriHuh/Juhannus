@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Spells : MonoBehaviour
 {
-    public ParticleSystem salama, ascend;
+    public ParticleSystem salama, ascend, koiraAscend;
 
     public static Spells instance;
 
-    public GameObject saatana, makkara, pupu, isoMakkara, kukka, pullo, tolkki;
+    public GameObject saatana, makkara, pupu, isoMakkara, kukka, pullo, tolkki, koira;
 
-    public AudioClip magic;
+    public AudioClip magic, koiraSound;
 
     public enum Effects
     {
@@ -22,7 +22,8 @@ public class Spells : MonoBehaviour
         pulloSade,
         tolkkiSade,
         isoMakkara,
-        makkaraAscension
+        makkaraAscension,
+        koiraSade
     }
 
     private void Start()
@@ -63,6 +64,11 @@ public class Spells : MonoBehaviour
                 break;
             case Effects.makkaraAscension:
                 ascend.Play();
+                break;
+            case Effects.koiraSade:
+                koiraAscend.Play();
+                StartCoroutine(SpawnRandom(koira, power));
+                AudioManager.instance.Play(koiraSound, 0.8f);
                 break;
             default:
                 break;

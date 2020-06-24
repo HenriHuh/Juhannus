@@ -11,7 +11,9 @@ public class Collectible : MonoBehaviour
         makkara,
         tolkki,
         kukka,
-        pullo
+        pullo,
+        koira,
+        isoMakkara
     }
     [HideInInspector] public bool used = false;
     

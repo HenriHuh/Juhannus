@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ExtraSalami
   m_EditorClassIdentifier: 
   types: 00000000010000000200000000000000
-  effects: 0100000003000000
+  effects: 010000000300000004000000
   power: 4

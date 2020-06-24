@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 41506008640008428}
   - component: {fileID: 41506008640008419}
   - component: {fileID: 41506008640008418}
+  - component: {fileID: 184055063039565524}
   m_Layer: 8
   m_Name: Bone.001
   m_TagString: Untagged
@@ -108,6 +109,21 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &184055063039565524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41506008640008429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7d63d32f48e6941a34da23c7e72f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 5
+  collisionSound: []
+  used: 0
 --- !u!1 &4416722602658781298
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +229,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.15231648, y: -0.6694443, z: 0.00097453763}
+  m_ConnectedAnchor: {x: 0.15231648, y: -0.6694443, z: 0.0009742996}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
