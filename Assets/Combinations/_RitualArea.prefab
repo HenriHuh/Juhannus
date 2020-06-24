@@ -109,13 +109,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combinations:
-  - {fileID: 11400000, guid: c74debf421d87024cb999c4400f3d869, type: 2}
+  - {fileID: 11400000, guid: c59fc1bb0835d5d4f97783c42b49551e, type: 2}
   - {fileID: 11400000, guid: 617786e0ac22c2d4a9843a0a46d9c246, type: 2}
   - {fileID: 11400000, guid: 364184722ccb911498b958d643f5a8b2, type: 2}
   - {fileID: 11400000, guid: 8faa937a95e05d54d95e27bd466a2a8e, type: 2}
   - {fileID: 11400000, guid: 80e7d3da3459b25418a4ef7ad4d57a59, type: 2}
   - {fileID: 11400000, guid: 0a7219fc181145e468526dd9f320643b, type: 2}
   - {fileID: 11400000, guid: 6c3f53251e3faf6438dad3747a5be6b6, type: 2}
+  - {fileID: 11400000, guid: 32d519e2b838fdc4fa6574a0a0f9f330, type: 2}
+  - {fileID: 11400000, guid: b5d18a8b277dc2c4285e69cbb35d5c20, type: 2}
+  - {fileID: 11400000, guid: c74debf421d87024cb999c4400f3d869, type: 2}
+  - {fileID: 11400000, guid: 2bf3a1ecd8295e346851ef49f573a736, type: 2}
 --- !u!114 &3894472630716452438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,11 +134,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salama: {fileID: 0}
   ascend: {fileID: 0}
-  saatana: {fileID: 0}
+  saatana: {fileID: 4021212824120943645, guid: fd2bd2349bd940040aa6c4374f33d6d7, type: 3}
   makkara: {fileID: 8426896097372232807, guid: 52afaeb83e70a964cbfab7985c2b438e, type: 3}
   pupu: {fileID: 0}
   isoMakkara: {fileID: 5737937250281557735, guid: 8affc9d432293bf41a960f68730b09e7,
     type: 3}
   kukka: {fileID: 0}
-  pullo: {fileID: 0}
-  magic: {fileID: 0}
+  pullo: {fileID: 917167939254940569, guid: f8130d0dc905b574cb1fb84baead4e16, type: 3}
+  tolkki: {fileID: 5624230500535025730, guid: 888d3c9516c554c47a55e063e9932907, type: 3}
+  koira: {fileID: 0}
+  magic: {fileID: 8300000, guid: 1fd852aba0e4f354e991a86626030899, type: 3}
+  koiraSound: {fileID: 0}

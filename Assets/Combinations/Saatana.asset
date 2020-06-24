@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce00bc8b24923ae419cc350f2505cb72, type: 3}
   m_Name: Saatana
   m_EditorClassIdentifier: 
-  types: 030000000300000002000000
+  types: 040000000300000000000000
   effects: 0100000000000000
   power: 1

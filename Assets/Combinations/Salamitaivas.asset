@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Salamitaivas
   m_EditorClassIdentifier: 
   types: 00000000000000000000000002000000
-  effects: 07000000
-  power: 4
+  effects: 0800000003000000
+  power: 2
