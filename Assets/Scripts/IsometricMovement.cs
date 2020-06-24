@@ -13,7 +13,7 @@ public class IsometricMovement : MonoBehaviour
     {
       float horizontal = Input.GetAxisRaw("Horizontal");
       float vertical = Input.GetAxisRaw("Vertical");
-      Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+      Vector3 direction = new Vector3(horizontal, -0.4f, vertical).normalized;
 
       if (direction.magnitude >= 0.1f)
       {
@@ -21,8 +21,10 @@ public class IsometricMovement : MonoBehaviour
 
       }
 
+      Vector3 HorizontalMovement = new Vector3(horizontal, 0, vertical).normalized;
+
       animator.SetFloat("Horizontal", horizontal);
       animator.SetFloat("Vertical", vertical);
-      animator.SetFloat("Speed", direction.sqrMagnitude);
+      animator.SetFloat("Speed", HorizontalMovement.sqrMagnitude);
     }
 }
