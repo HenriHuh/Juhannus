@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Spells : MonoBehaviour
 {
-    public ParticleSystem salama, ascend, koiraAscend;
+    public ParticleSystem salama, ascend, koiraAscend, hyttyset;
+
+    public List<ParticleSystem> summonParticles;
 
     public static Spells instance;
 
@@ -23,7 +25,8 @@ public class Spells : MonoBehaviour
         tolkkiSade,
         isoMakkara,
         makkaraAscension,
-        koiraSade
+        koiraSade,
+        hyttyset
     }
 
     private void Start()
@@ -70,6 +73,9 @@ public class Spells : MonoBehaviour
                 StartCoroutine(SpawnRandom(koira, power));
                 AudioManager.instance.Play(koiraSound, 0.8f);
                 break;
+            case Effects.hyttyset:
+                hyttyset.Play();
+                break;
             default:
                 break;
         }
@@ -77,6 +83,11 @@ public class Spells : MonoBehaviour
 
     public void RitualEffect(List<GameObject> objs, List<Effects> effects, float power)
     {
+        foreach (ParticleSystem p in summonParticles)
+        {
+            p.Play();
+        }
+
         AudioManager.instance.Play(magic, 0.7f);
         StartCoroutine(Ritual(objs, effects, power));
     }

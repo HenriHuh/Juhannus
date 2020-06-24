@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  spawn: {fileID: 8300000, guid: 746e8670f014c7740bbf4982af6f0161, type: 3}
+  spawn: {fileID: 8300000, guid: e6471d292faf9f84da978c69277f25b7, type: 3}
 --- !u!54 &4021212824120943639
 Rigidbody:
   m_ObjectHideFlags: 0
