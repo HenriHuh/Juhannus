@@ -5,6 +5,7 @@ using UnityEngine;
 public class IsometricMovement : MonoBehaviour
 {
     public CharacterController controller;
+    public Animator animator;
 
     public float speed = 6f;
 
@@ -17,6 +18,11 @@ public class IsometricMovement : MonoBehaviour
       if (direction.magnitude >= 0.1f)
       {
         controller.Move(direction * speed * Time.deltaTime);
+
       }
+
+      animator.SetFloat("Horizontal", horizontal);
+      animator.SetFloat("Vertical", vertical);
+      animator.SetFloat("Speed", direction.sqrMagnitude);
     }
 }
