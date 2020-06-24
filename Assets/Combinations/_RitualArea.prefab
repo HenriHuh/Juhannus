@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3894472630716452425}
   - component: {fileID: 3894472630716452438}
   m_Layer: 0
-  m_Name: RitualArea
+  m_Name: _RitualArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,6 +112,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c74debf421d87024cb999c4400f3d869, type: 2}
   - {fileID: 11400000, guid: 617786e0ac22c2d4a9843a0a46d9c246, type: 2}
   - {fileID: 11400000, guid: 364184722ccb911498b958d643f5a8b2, type: 2}
+  - {fileID: 11400000, guid: 8faa937a95e05d54d95e27bd466a2a8e, type: 2}
+  - {fileID: 11400000, guid: 80e7d3da3459b25418a4ef7ad4d57a59, type: 2}
+  - {fileID: 11400000, guid: 0a7219fc181145e468526dd9f320643b, type: 2}
+  - {fileID: 11400000, guid: 6c3f53251e3faf6438dad3747a5be6b6, type: 2}
 --- !u!114 &3894472630716452438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +129,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salama: {fileID: 0}
+  ascend: {fileID: 0}
+  saatana: {fileID: 0}
   makkara: {fileID: 8426896097372232807, guid: 52afaeb83e70a964cbfab7985c2b438e, type: 3}
   pupu: {fileID: 0}
   isoMakkara: {fileID: 5737937250281557735, guid: 8affc9d432293bf41a960f68730b09e7,
     type: 3}
+  kukka: {fileID: 0}
+  pullo: {fileID: 0}
+  magic: {fileID: 0}

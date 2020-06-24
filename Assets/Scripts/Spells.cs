@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Spells : MonoBehaviour
 {
-    public ParticleSystem salama;
+    public ParticleSystem salama, ascend;
 
     public static Spells instance;
 
-    public GameObject makkara, pupu, isoMakkara;
+    public GameObject saatana, makkara, pupu, isoMakkara, kukka, pullo, tolkki;
 
     public AudioClip magic;
 
@@ -18,7 +18,11 @@ public class Spells : MonoBehaviour
         salamia,
         pupu,
         makkaraSade,
-        isoMakkara
+        kukkaSade,
+        pulloSade,
+        tolkkiSade,
+        isoMakkara,
+        makkaraAscension
     }
 
     private void Start()
@@ -31,6 +35,7 @@ public class Spells : MonoBehaviour
         switch (effect)
         {
             case Effects.saatana:
+                Instantiate(saatana);
                 break;
             case Effects.salamia:
                 salama.Play();
@@ -40,12 +45,24 @@ public class Spells : MonoBehaviour
             case Effects.makkaraSade:
                 StartCoroutine(SpawnRandom(makkara, power));
                 break;
+            case Effects.kukkaSade:
+                StartCoroutine(SpawnRandom(kukka, power));
+                break;
+            case Effects.pulloSade:
+                StartCoroutine(SpawnRandom(pullo, power));
+                break;
+            case Effects.tolkkiSade:
+                StartCoroutine(SpawnRandom(tolkki, power));
+                break;
             case Effects.isoMakkara:
                 GameObject g = Instantiate(isoMakkara, Vector3.up * 20, Quaternion.identity);
                 foreach (Rigidbody rb in g.GetComponentsInChildren<Rigidbody>())
                 {
                     rb.AddTorque(new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)) * 50);
                 }
+                break;
+            case Effects.makkaraAscension:
+                ascend.Play();
                 break;
             default:
                 break;

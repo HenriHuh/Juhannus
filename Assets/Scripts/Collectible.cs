@@ -10,7 +10,8 @@ public class Collectible : MonoBehaviour
     {
         makkara,
         tolkki,
-        kukka
+        kukka,
+        pullo
     }
     [HideInInspector] public bool used = false;
     
