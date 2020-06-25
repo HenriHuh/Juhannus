@@ -131,10 +131,10 @@ public class Spells : MonoBehaviour
             t += Time.deltaTime;
             if (t > next)
             {
-                GameObject g = Instantiate(obj, new Vector3(Random.Range(-10, 10), 20, Random.Range(-10, 10)), Quaternion.identity);
+                GameObject g = Instantiate(obj, new Vector3(Random.Range(-20, 20), 20, Random.Range(-20, 20)), Quaternion.identity);
                 if (g.GetComponent<Rigidbody>())
                 {
-                    g.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)) * 50);
+                    g.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), Random.Range(-20, 20)) * 50);
                 }
                 next += Random.Range(0.5f, 1f) / power;
             }
