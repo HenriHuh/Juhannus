@@ -31,6 +31,7 @@ public class HoverObject : MonoBehaviour
             Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100, objLayer);
             if (hit.transform)
             {
+                AudioManager.instance.Magic(true);
                 part.Play();
                 hoveredObject = hit.transform.gameObject;
                 hoveredObject.GetComponent<Rigidbody>().drag = 4;
@@ -46,6 +47,7 @@ public class HoverObject : MonoBehaviour
 
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
+                AudioManager.instance.Magic(false);
                 part.Stop();
                 hoveredObject.GetComponent<Rigidbody>().drag = 0;
                 hoveredObject = null;

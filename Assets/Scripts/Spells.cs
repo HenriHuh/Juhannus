@@ -12,7 +12,7 @@ public class Spells : MonoBehaviour
 
     public GameObject saatana, makkara, pupu, isoMakkara, kukka, pullo, tolkki, koira;
 
-    public AudioClip magic, koiraSound;
+    public AudioClip magic, koiraSound, hyttynen;
 
     public enum Effects
     {
@@ -75,6 +75,7 @@ public class Spells : MonoBehaviour
                 break;
             case Effects.hyttyset:
                 hyttyset.Play();
+                AudioManager.instance.Play(hyttynen, 0.8f);
                 break;
             default:
                 break;
