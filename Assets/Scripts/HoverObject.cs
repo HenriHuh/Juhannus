@@ -14,12 +14,16 @@ public class HoverObject : MonoBehaviour
 
     void Start()
     {
-        
+        part.Stop();
     }
 
     void Update()
     {
-        partStart.transform.position = transform.position;
+        RaycastHit h;
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out h, 100, hoverLayer))
+        {
+            partStart.transform.position = h.point;
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -29,6 +33,7 @@ public class HoverObject : MonoBehaviour
             {
                 part.Play();
                 hoveredObject = hit.transform.gameObject;
+                hoveredObject.GetComponent<Rigidbody>().drag = 4;
             }
         }
 
@@ -42,6 +47,7 @@ public class HoverObject : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 part.Stop();
+                hoveredObject.GetComponent<Rigidbody>().drag = 0;
                 hoveredObject = null;
             }
         }

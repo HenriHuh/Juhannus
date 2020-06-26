@@ -10119,7 +10119,7 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 1
+    enabled: 0
     ratio: 0.2
     light: {fileID: 9191629823646535365, guid: 8eec3145bd889414f8802ee9ea2e25b7, type: 3}
     randomDistribution: 1
@@ -17939,7 +17939,7 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 1
+    enabled: 0
     ratio: 0.3
     light: {fileID: 9191629823646535365, guid: 8eec3145bd889414f8802ee9ea2e25b7, type: 3}
     randomDistribution: 1
@@ -20554,6 +20554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TelekinesisVXF
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504338277643764925, guid: 701328be54421c14d9af8da678948e3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7504338277643764926, guid: 701328be54421c14d9af8da678948e3e,
         type: 3}
