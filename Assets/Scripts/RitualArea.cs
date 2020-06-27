@@ -65,6 +65,7 @@ public class RitualArea : MonoBehaviour
                     collected.Remove(c);
                 }
 
+                MainMenu.instance.AddUnlock(com);
                 Spells.instance.RitualEffect(objs, com.effects, com.power);
             }
 
