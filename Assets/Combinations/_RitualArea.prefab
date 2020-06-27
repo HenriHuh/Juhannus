@@ -134,14 +134,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salama: {fileID: 0}
   ascend: {fileID: 0}
+  koiraAscend: {fileID: 0}
+  hyttyset: {fileID: 0}
+  summonParticles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   saatana: {fileID: 4021212824120943645, guid: fd2bd2349bd940040aa6c4374f33d6d7, type: 3}
   makkara: {fileID: 8426896097372232807, guid: 52afaeb83e70a964cbfab7985c2b438e, type: 3}
   pupu: {fileID: 0}
   isoMakkara: {fileID: 5737937250281557735, guid: 8affc9d432293bf41a960f68730b09e7,
     type: 3}
-  kukka: {fileID: 0}
+  kukka: {fileID: 8394762240824318733, guid: 921f75527fa068344ba67e17e43494e2, type: 3}
   pullo: {fileID: 917167939254940569, guid: f8130d0dc905b574cb1fb84baead4e16, type: 3}
   tolkki: {fileID: 5624230500535025730, guid: 888d3c9516c554c47a55e063e9932907, type: 3}
-  koira: {fileID: 0}
+  koira: {fileID: 8571632463663857952, guid: 5a0091ec7ba42a244b1657b1ba625fe7, type: 3}
   magic: {fileID: 8300000, guid: 1fd852aba0e4f354e991a86626030899, type: 3}
-  koiraSound: {fileID: 0}
+  koiraSound: {fileID: 8300000, guid: c8386657bb7271345bf19309ef0191b3, type: 3}
+  hyttynen: {fileID: 8300000, guid: 357c32d1210ee01468584821019e7e97, type: 3}
