@@ -17,4 +17,4 @@ MonoBehaviour:
     targetLocation: /Scripts
   - fileEnding: .mat
     targetLocation: /Materials
-  enabled: 1
+  enabled: 0

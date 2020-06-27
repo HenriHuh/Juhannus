@@ -75,14 +75,16 @@ public class FileOrganizer : ScriptableObject
                     {
                         string name = file.Name.Substring(0, file.Name.Length - f.fileEnding.Length);
                         name += "0" + f.fileEnding;
-                        File.Move(Application.dataPath + "\\" + file.Name, Application.dataPath + "\\" + name);
+                        FileUtil.MoveFileOrDirectory(Application.dataPath + "\\" + file.Name, Application.dataPath + "\\" + name);
+                        FileUtil.MoveFileOrDirectory(Application.dataPath + "\\" + file.Name + ".meta", Application.dataPath + "\\" + name + ".meta");
                         Debug.Log("File " + file.Name + " already exists!");
                         AssetDatabase.Refresh();
                     }
                     else //Move file to target location
                     {
 
-                        File.Move(Application.dataPath + "\\" + file.Name, Application.dataPath + "\\" + f.targetLocation + "\\" + file.Name);
+                        FileUtil.MoveFileOrDirectory(Application.dataPath + "\\" + file.Name, Application.dataPath + "\\" + f.targetLocation + "\\" + file.Name);
+                        FileUtil.MoveFileOrDirectory(Application.dataPath + "\\" + file.Name + ".meta", Application.dataPath + "\\" + f.targetLocation + "\\" + file.Name + ".meta");
                         AssetDatabase.Refresh();
                         Debug.Log("Moved file \"" + file.Name + "\" to folder: " + f.targetLocation);
 
