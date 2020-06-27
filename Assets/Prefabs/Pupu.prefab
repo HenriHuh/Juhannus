@@ -98,6 +98,8 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 1024
+  coolDownSpeed: 2
+  jumpForce: 5
 --- !u!1 &7001715785701786842
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +142,7 @@ GameObject:
   - component: {fileID: 4521534217572516351}
   - component: {fileID: 7770965536002101362}
   - component: {fileID: 3560216387642924398}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PupuTexture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
