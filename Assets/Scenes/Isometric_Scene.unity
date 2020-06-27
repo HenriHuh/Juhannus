@@ -28038,6 +28038,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ---canvas---
       objectReference: {fileID: 0}
+    - target: {fileID: 7502793516290314404, guid: ce7808bdd552cdc46bce3bb566bbee8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Salami-Resepti
+      objectReference: {fileID: 0}
     - target: {fileID: 7841278993776193745, guid: ce7808bdd552cdc46bce3bb566bbee8f,
         type: 3}
       propertyPath: m_LocalPosition.x
