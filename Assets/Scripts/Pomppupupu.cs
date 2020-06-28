@@ -11,6 +11,7 @@ public class Pomppupupu : MonoBehaviour
     Rigidbody rb;
     bool isGrounded;
     float coolDownCounter;
+    float facing;
 
     [SerializeField]
     float coolDownSpeed = 2f;
@@ -45,5 +46,8 @@ public class Pomppupupu : MonoBehaviour
     void Jump()
     {
       rb.velocity = new Vector3(Random.Range(-2.0f, 2.0f), jumpForce, Random.Range(-2.0f, 2.0f));
+      Vector3 localScale = gameObject.transform.localScale;
+      localScale.x *= -1;
+      transform.localScale = localScale;
     }
 }
