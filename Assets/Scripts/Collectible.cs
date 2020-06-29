@@ -13,10 +13,11 @@ public class Collectible : MonoBehaviour
         kukka,
         pullo,
         koira,
-        isoMakkara
+        isoMakkara,
+        pupu
     }
     [HideInInspector] public bool used = false;
-    
+
 
     private void OnCollisionEnter(Collision col)
     {

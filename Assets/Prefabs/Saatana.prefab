@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1445400572222043499}
   - component: {fileID: 1320000797570446979}
   - component: {fileID: 4488297413341397944}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DemonWings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 253709061299123916}
   - component: {fileID: 8335520908815904469}
   - component: {fileID: 5342470479755130182}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DemonBode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
