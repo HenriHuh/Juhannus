@@ -22633,6 +22633,12 @@ PrefabInstance:
       propertyPath: summonParticles.Array.data[2]
       value: 
       objectReference: {fileID: 1759353387}
+    - target: {fileID: 3894472630716452438, guid: ce6bef7c7ea4c494ab868f96141db462,
+        type: 3}
+      propertyPath: isoPupu
+      value: 
+      objectReference: {fileID: 4163865594557044092, guid: 54c96ff653f21c346bb14629953ad9cd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce6bef7c7ea4c494ab868f96141db462, type: 3}
 --- !u!1 &939380645

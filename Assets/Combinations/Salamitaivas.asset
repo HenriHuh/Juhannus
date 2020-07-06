@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce00bc8b24923ae419cc350f2505cb72, type: 3}
   m_Name: Salamitaivas
   m_EditorClassIdentifier: 
-  types: 00000000000000000000000002000000
+  types: 000000000000000003000000
   effects: 080000000300000001000000
   power: 2

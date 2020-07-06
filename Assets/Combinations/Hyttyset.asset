@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Hyttyset
   m_EditorClassIdentifier: 
   types: 020000000100000001000000
-  effects: 
+  effects: 0a00000001000000
   power: 1

@@ -10,7 +10,7 @@ public class Spells : MonoBehaviour
 
     public static Spells instance;
 
-    public GameObject saatana, makkara, pupu, isoMakkara, kukka, pullo, tolkki, koira;
+    public GameObject saatana, makkara, pupu, isoMakkara, kukka, pullo, tolkki, koira, isoPupu;
 
     public AudioClip magic, koiraSound, hyttynen;
 
@@ -26,7 +26,8 @@ public class Spells : MonoBehaviour
         isoMakkara,
         makkaraAscension,
         koiraSade,
-        hyttyset
+        hyttyset,
+        jattiPupu
     }
 
     private void Start()
@@ -76,6 +77,9 @@ public class Spells : MonoBehaviour
             case Effects.hyttyset:
                 hyttyset.Play();
                 AudioManager.instance.Play(hyttynen, 0.8f);
+                break;
+            case Effects.jattiPupu:
+                Instantiate(isoPupu, Vector3.up * 20, Quaternion.identity);
                 break;
             default:
                 break;
