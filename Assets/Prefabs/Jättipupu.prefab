@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3193635078556818382}
   - component: {fileID: 4874444055112335421}
   - component: {fileID: 2003580867418052001}
-  - component: {fileID: 7521760780413550921}
+  - component: {fileID: 7239994599175081506}
   m_Layer: 8
   m_Name: "J\xE4ttipupu"
   m_TagString: Untagged
@@ -81,7 +81,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &7521760780413550921
+--- !u!114 &7239994599175081506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,15 +90,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4163865594557044092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8e844ff2a734cb40a7a326ecc3773b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 48a8e997b993db94fa9e8a68cebb142b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 6744926360907626888}
-  groundDistance: 0.2
+  groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 1024
-  coolDownSpeed: 4
+  megaPupuJump: {fileID: 8300000, guid: 59e8616f0b6a6e4468a926dea9368701, type: 3}
+  coolDownSpeed: 2
   jumpForce: 5
 --- !u!1 &7757482013513839335
 GameObject:
