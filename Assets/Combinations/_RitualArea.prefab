@@ -145,7 +145,7 @@ MonoBehaviour:
   pupu: {fileID: 3695781911460995905, guid: 3fa7b46ffbd52ec438c8298d5debac05, type: 3}
   isoMakkara: {fileID: 5737937250281557735, guid: 8affc9d432293bf41a960f68730b09e7,
     type: 3}
-  kukka: {fileID: 8394762240824318733, guid: 921f75527fa068344ba67e17e43494e2, type: 3}
+  kukka: {fileID: 1172802164452884600, guid: 0f68bfbaef159f24b813f3b1bcdcde80, type: 3}
   pullo: {fileID: 917167939254940569, guid: f8130d0dc905b574cb1fb84baead4e16, type: 3}
   tolkki: {fileID: 5624230500535025730, guid: 888d3c9516c554c47a55e063e9932907, type: 3}
   koira: {fileID: 8571632463663857952, guid: 5a0091ec7ba42a244b1657b1ba625fe7, type: 3}
