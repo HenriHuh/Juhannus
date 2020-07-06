@@ -37,6 +37,9 @@ public class Spells : MonoBehaviour
 
     public void Play(Effects effect, float power)
     {
+        SpellListener.instance.Invoke(effect);
+
+
         switch (effect)
         {
             case Effects.saatana:

@@ -69,6 +69,7 @@ public class MainMenu : MonoBehaviour
 
     public void AddUnlock(Combination com)
     {
+
         if (!unlocked.Contains(com))
         {
             unlocked.Add(com);

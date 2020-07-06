@@ -5,8 +5,13 @@ using UnityEngine.Events;
 
 public class SpellListener : MonoBehaviour
 {
-
+    public static SpellListener instance;
     public UnityEvent saatana, salama, pupu, makkaraSade, kukkaSade, pulloSade, tolkkiSade, isoMakkara, makkaraAscension, koiraSade, hyttyset, isoPupu;
+
+    private void Start()
+    {
+        instance = this;
+    }
 
     public void Invoke(Spells.Effects effect)
     {
