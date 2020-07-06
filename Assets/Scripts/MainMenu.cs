@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
@@ -44,21 +45,20 @@ public class MainMenu : MonoBehaviour
         if (menuTime == 1f || menuTime == 0f)
         {
 
-          if (menuUp == false)
-          {
-              CheckUnlocks();
-              //Open menu, Set "up" layer to 1
-              menuTarget = 1;
-              menuUp = true;
-              AudioManager.instance.Play(open, 0.6f);
-          }
-          else
-          {
-              menuTarget = 0;
-              //Close menu, Set "up" layer to 0
-              menuUp = false;
-              AudioManager.instance.Play(close, 0.6f);
-          }
+            if (menuUp == false)
+            {
+                //Open menu, Set "up" layer to 1
+                menuTarget = 1;
+                menuUp = true;
+                AudioManager.instance.Play(open, 0.6f);
+            }
+            else
+            {
+                menuTarget = 0;
+                //Close menu, Set "up" layer to 0
+                menuUp = false;
+                AudioManager.instance.Play(close, 0.6f);
+            }
         }
     }
 
@@ -74,19 +74,20 @@ public class MainMenu : MonoBehaviour
         {
             unlocked.Add(com);
         }
+        CheckUnlocks();
     }
 
     public void CheckUnlocks()
     {
-        foreach (Animator anim in unlockUI)
+
+        foreach (Combination c in unlocked)
         {
-            foreach (Combination c in unlocked)
+            try
             {
-                if (anim.gameObject.name == c.name)
-                {
-                    anim.SetBool("found", true);
-                }
+                GameObject.Find(c.name + "Unknown").SetActive(false);
+                GameObject.Find(c.name + "Text").SetActive(true);
             }
+            catch (System.Exception) { }
         }
-    }
+    } 
 }
