@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5271052874645059072}
   - component: {fileID: 1246702758665495452}
   - component: {fileID: 7125154415437854580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pupu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3695781911460995905}
   m_LocalRotation: {x: 0.0000006854534, y: -0.7071067, z: 0.000000029802322, w: 0.7071069}
-  m_LocalPosition: {x: -0, y: 1.141, z: -4.657}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 943809186078424997}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6276260213606076341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 4521534217572516351}
   - component: {fileID: 7770965536002101362}
   - component: {fileID: 3560216387642924398}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: PupuTexture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
