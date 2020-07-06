@@ -22,6 +22,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     float menuSpeed = 3f;
 
+
     void Start()
     {
         instance = this;
@@ -69,6 +70,8 @@ public class MainMenu : MonoBehaviour
 
     public void AddUnlock(Combination com)
     {
+
+        SpellListener.instance.Invoke(com.name);
 
         if (!unlocked.Contains(com))
         {

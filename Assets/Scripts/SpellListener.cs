@@ -8,9 +8,27 @@ public class SpellListener : MonoBehaviour
     public static SpellListener instance;
     public UnityEvent saatana, salama, pupu, makkaraSade, kukkaSade, pulloSade, tolkkiSade, isoMakkara, makkaraAscension, koiraSade, hyttyset, isoPupu;
 
+    public UnityEvent combSalami, combPullosade, combSekasotku;
+
     private void Start()
     {
         instance = this;
+    }
+
+    public void Invoke(string name)
+    {
+        if (name == "Salami")
+        {
+            combSalami.Invoke();
+        }
+        else if (name == "Pullosade")
+        {
+            combPullosade.Invoke();
+        }
+        else if (name == "Sekasotku")
+        {
+            combSekasotku.Invoke();
+        }
     }
 
     public void Invoke(Spells.Effects effect)
