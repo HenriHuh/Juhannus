@@ -49,6 +49,7 @@ public class Spells : MonoBehaviour
                 salama.Play();
                 break;
             case Effects.pupu:
+                StartCoroutine(SpawnRandom(pupu, power));
                 break;
             case Effects.makkaraSade:
                 StartCoroutine(SpawnRandom(makkara, power));
